@@ -1,0 +1,52 @@
+/* Ajustando a largura e a altura do carousel */
+#carouselExampleIndicators {
+    max-width: 90vw; /* Tamanho máximo da largura do carousel */
+    margin: 0 auto; /* Centraliza o carousel */
+}
+
+#carouselExampleIndicators .carousel-inner {
+    height: 500px; /* Definindo a altura do carousel */
+}
+
+/* Ajustando as imagens do carousel */
+#carouselExampleIndicators .carousel-item img {
+    width: 100%; /* Imagem ocupa toda a largura do container */
+    height: 100%; /* Imagem ocupa toda a altura do container */
+    object-fit: cover; /* Faz com que a imagem cubra a área sem deformar */
+    object-position: 0 -225px;
+}
+
+/* Estilo para os cards */
+.card {
+    max-height: 478px; /* Altura máxima do card */
+    overflow: hidden; /* Garante que o conteúdo que ultrapassar o limite do card seja escondido */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos do card verticalmente */
+    justify-content: space-between; /* Espaço entre a imagem e o corpo do card */
+}
+
+/* Estilo para as imagens dentro dos cards */
+.card-img-top {
+    max-width: 262px; /* Largura máxima para a imagem */
+    max-height: 262px; /* Altura máxima para a imagem */
+    object-fit: cover; /* A imagem vai cobrir a área disponível mantendo a proporção */
+    margin: 0 auto; /* Centraliza a imagem no card */
+}
+
+/* Estilo para o corpo do card */
+.card-body {
+    flex-grow: 1; /* Faz com que o corpo do card ocupe o restante do espaço */
+    padding: 15px;
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapassar a área do card */
+}
+
+/* Caso deseje ajustar mais detalhes de padding ou fontes, pode adicionar como necessário */
+.card-body p {
+    color: #555;
+}
+
+@media (max-width: 1046px) {
+    #carouselExampleIndicators {
+        display: none; /* Esconde o carrossel em telas pequenas */
+    }
+}

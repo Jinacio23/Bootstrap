@@ -1,0 +1,18 @@
+.imgContainer {
+    width: 100px;
+}
+
+.imgBg {
+    height: 68vh;
+    overflow: hidden;
+}
+
+.imgBg img{
+    border-radius: 25px;
+    min-width: 862px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
