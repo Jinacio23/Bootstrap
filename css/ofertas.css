@@ -13,7 +13,7 @@
     width: 100%; /* Imagem ocupa toda a largura do container */
     height: 100%; /* Imagem ocupa toda a altura do container */
     object-fit: cover; /* Faz com que a imagem cubra a área sem deformar */
-    object-position: 0 -225px;
+    object-position: 0 -160px;
 }
 
 /* Estilo para os cards */
